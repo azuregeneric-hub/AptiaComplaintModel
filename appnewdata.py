@@ -287,7 +287,7 @@ if uploaded_file is not None:
 
     # Predict with your model
     preds_proba = model.predict_proba(X_user)[:, 1]
-    optimal_threshold = 0.83
+    optimal_threshold = 0.86
 
     preds_label = (preds_proba > optimal_threshold).astype(int)
 
